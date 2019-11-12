@@ -1,0 +1,489 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+html,body{
+    height: 100%;
+    font-family: "SegoeUISemiBold";
+    scroll-behavior: smooth;
+}
+a, a:hover, li, i{
+    text-decoration: none;
+    transition: .5s;
+}
+p {
+    font-family: "SegoeUIRegular";
+}
+.image_holder {
+    height: 100%;
+    width: 100%;
+}
+img{
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+ul{
+    margin: 0;
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+.section_padding{
+    padding: 80px 0px;
+}
+/* Header Section Start */
+
+
+
+
+
+.header_section{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+}
+
+.header_bg {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    padding: 50px 0;
+    top: 0;
+    transition: 1s;
+    
+}
+.header_bg::after {
+    background-color: #353f46;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.75;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.header_menu ul, .portfolio_menu ul{
+    float: right;
+}
+.header_menu li,.portfolio_menu ul li {
+    display: inline;
+    
+}
+
+.header_menu a, .portfolio_menu ul li{
+    border: 1px solid transparent;
+    padding: 10px 13px;
+    font-family: "SegoeUIBold";
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+}
+
+.header_menu a:hover, .portfolio_menu ul li:hover,.header_menu ul>li.active>a,.portfolio_menu ul>li.active{
+    border: 1px solid #488CAA;
+    color: #488CAA;
+    cursor: pointer;
+}
+
+
+
+.header_band span {
+    color: #488caa;
+}
+h3 {
+    color: #fff;
+    font-family: "SegoeUIBold";
+    font-size: 30px;
+    display: inline;
+}
+
+
+
+
+/* Header Section End */
+/* Slider Section Start */
+
+.slider_bg{
+    background: url(img/slider1.jpg);
+    background-repeat: none;
+    background-position: top;
+    background-size: cover;
+}
+
+
+.slider_section, .slider_section div {
+    height: 100%;
+}
+.slider_table_cell, .slider_table_cell div{
+    display: table-cell;
+    height: auto;
+    vertical-align: middle;
+    text-align: center;
+}
+.slider_table {
+    display: table;
+    width: 100%;
+}
+.slider_bg_opacity{
+    position: relative;
+    z-index: 1;
+}
+.slider_bg_opacity:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3f4950;
+    opacity: .55;
+    z-index: -1;
+}
+.slider_table_cell h2 {
+    color: #fff;
+    display: inline-block;
+    font-family: "SegoeUILight";
+    font-size: 42px;
+    margin: 10px 0;
+    padding: 12px;
+    position: relative;
+    z-index: 1;
+    top: 40px;
+}
+.slider_table_cell h2:after{
+    content: "";
+    position: absolute;
+    background-color: #3A444A;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    z-index: -1;
+}
+
+
+
+/* Slider Section End */
+/* Services Section Start */
+
+
+.service_section {
+    background-color: #4bcaff;
+    color: #fff;
+}
+.section_heading h4 span {
+    border-bottom: 1px solid;
+}
+.section_heading {
+    margin-bottom: 20px;
+}
+.section_heading > h4 {
+    font-family: SegoeUILight;
+    font-size: 30px;
+}
+
+.single_service > h4 {
+    font-size: 24px;
+    margin: 5px 0;
+}
+.single_service > p {
+    font-size: 12px;
+}
+.single_service > i {
+    font-size: 40px;
+}
+
+/* Services Ends */
+/*Portfoio Start */
+
+.portfolio_menu ul li {
+    color: #69747b;
+}
+.portfolio_content {
+    margin-top: 20px;
+    height: auto;
+    width: 100%;
+}
+.single_portfolio {
+    height: 270px;
+    width: 25%;
+    float: left;
+    color: #fff;
+    
+}
+.image_holder{
+    width: 98%;
+    height: 98%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.image_holder:after{
+    content: "";
+    position: absolute;
+    background-color: #454E54;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .35;
+}
+
+.title > h5, .meta>h5 {
+    position: relative;
+    z-index: 2;
+    padding: 15px 0;
+}
+.title > h5::after, .meta>h5:after,.single_portfolio_btn>a:after{
+    background-color: #4bcaff;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.title {
+    left: 0;
+    position: absolute;
+    top: -100%;
+    width: 100%;
+    transition: .5s;
+}
+.single_portfolio_btn>a {
+    padding: 10px 30px;
+    display: block;
+    position: relative;
+    z-index: 1;
+    transition: .5s;
+    color: #fff;
+}
+.single_portfolio_btn>a:hover{
+    color:#333;
+}
+.single_portfolio_btn{
+    position: absolute;
+    right: -100%;
+    top: 130px;
+    transition: 1s;
+}
+.meta {
+    bottom: -100%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    transition: .5s;
+}
+.image_holder:hover img{
+    transform: scale(1.1)
+}
+.image_holder:hover .meta {
+    bottom: 0;
+}
+.image_holder:hover .title {
+    top: 0;
+}
+.image_holder:hover .single_portfolio_btn {
+    right: 0;
+}
+
+/* Portfolio End */
+/* Default Section Start */
+
+
+.default_section {
+    background-color: #515f67;
+    color: #fff;
+}
+
+.default_section_heading p span {
+    display: block;
+    margin-top: 20px;
+}
+.default_section_heading > a {
+    border: 1px solid #000;
+    color: #000;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-family: "SegoeUIBold";
+}
+.default_section_heading > a:hover {
+    color: #fff;
+}
+.default_section_video iframe {
+  border: none;
+}
+
+/* Default Section End */
+/* About Section Start */
+
+.about_section {
+  background:url("img/about_bg.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+.about_section:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3f4950;
+    opacity: .75;
+    z-index: -1;
+}
+.about_left p span {
+  display: block;
+  margin-top: 20px;
+}
+
+.about_social a i {
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 20px;
+    margin-right: 5px;
+    padding: 8px 10px;
+    font-weight: bold;
+}
+.about_social {
+    margin-top: 20px;
+}
+
+.about_social a i.fa.fa-twitter:hover {
+    background-color: #00abdc;
+}
+.about_social a i.fa.fa-google-plus:hover {
+    background-color: #E44937;
+}
+.about_social a i.fa.fa-dribbble:hover {
+    background-color: #F2689C;
+}
+.about_social a i.fa.fa-linkedin:hover {
+    background-color: #1D77B6;
+}
+
+/* About Section End */
+/* Testimonial Section Start */
+
+.testimonial_heading {
+  background: rgba(0, 0, 0, 0) url("img/qoutation.png") no-repeat scroll right center;
+}
+.testimonial_section blockquote{
+    border: none;
+}
+
+.testimonial_section blockquote footer{
+    float: right;
+    margin-right: 10px;
+}
+
+/* Testimonial Section End */
+
+
+/* programmer Section start*/
+.col-md-12 {}
+
+.col-md-3 {}
+
+.developer img {height:180px;width:180px;border-radius:20px}
+
+.developer span{font-weight:bold;font-size:15px}
+
+.developer p{}
+
+.workers {}
+
+.workers h2{text-align:center}
+
+/* programmer Section End */
+
+
+
+
+
+/* Contact Section Start */
+
+
+
+.contact_section {
+  background: url("img/contact_bg.jpg") no-repeat scroll center center / cover ;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.contact_section:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #3f4950;
+    z-index: -1;
+    opacity: .75;
+}
+.form-control {
+  background-color: transparent;
+    margin: 10px 0px;
+    color: #fff;
+}
+.contact_section form h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.contact_right span {
+    display: block;
+}
+.contact_right {
+    margin-top: 15px;
+}
+.email_heading{
+    margin-top: 20px;
+}
+.message_btn {
+  background-color: #4bcaff;
+  border: medium none;
+  margin-top: 20px;
+  padding: 20px 60px;
+    transition: .5s;
+}
+.message_btn:hover{
+    color: #000;
+}
+
+
+/* Contact Section End */
+/* Footer Section Start */
+
+.footer_section {
+    background-color: #353f47;
+    color: #515f67;
+    padding: 45px 0;
+}
+.footer_menu ul li a {
+    color: #515f67;
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+.footer_menu li {
+    display: inline;
+}
+.footer_menu a:hover {
+    color: #fff;
+}
